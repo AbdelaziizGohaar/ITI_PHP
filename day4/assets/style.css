@@ -1,12 +1,17 @@
 /* Ramadan Theme for styles.css */
 body {
-    background-color: #0d1b2a;
-    color: #f8f9fa;
-    overflow: auto;
-    animation: fadeInBody 1s ease-in-out;
-    background-image: url('ramadan-pattern.png');
-    /* Add a subtle Ramadan pattern */
-    background-size: cover;
+    background-color: #0d1b2a !important;
+    color: #f8f9fa !important;
+    overflow: auto !important;
+    animation: fadeInBody 1s ease-in-out !important;
+    background-image: url('ramadan-pattern.png') !important;
+    background-size: cover !important;
+}
+
+/* Override Bootstrap Variables */
+:root {
+    --bs-body-bg: #0d1b2a !important;
+    --bs-body-color: #f8f9fa !important;
 }
 
 @keyframes fadeInBody {
@@ -21,10 +26,10 @@ body {
 
 .form-container {
     max-width: 500px !important;
-    background: rgba(13, 27, 42, 0.9);
+    background: rgba(13, 27, 42, 0.9) !important;
     padding: 30px !important;
     border-radius: 10px !important;
-    box-shadow: 0 4px 15px rgba(255, 223, 186, 0.3);
+    box-shadow: 0 4px 15px rgba(255, 223, 186, 0.3) !important;
     min-width: 65% !important;
     animation: slideIn 1s ease-in-out !important;
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out !important;
@@ -48,6 +53,7 @@ body {
     transform: scale(1.03) !important;
 }
 
+/* Input Fields */
 .form-control {
     background-color: #1c2833 !important;
     color: #f8f9fa !important;
@@ -66,35 +72,41 @@ body {
     transition: all 0.3s ease-in-out !important;
 }
 
+/* Buttons */
 .btn-custom {
-    background-color: #b8860b;
-    color: #fff;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s;
-    cursor: pointer;
-    animation: glow 1.5s infinite;
-    padding: 10px 15px;
-    border: none;
+    background-color: #b8860b !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    border-radius: 5px !important;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s !important;
+    cursor: pointer !important;
+    animation: glow 1.5s infinite !important;
+    padding: 10px 15px !important;
+    border: none !important;
 }
 
 @keyframes glow {
     0% {
-        box-shadow: 0 0 5px rgba(255, 223, 186, 0.5);
+        box-shadow: 0 0 5px rgba(255, 223, 186, 0.5) !important;
     }
 
     50% {
-        box-shadow: 0 0 15px rgba(255, 223, 186, 0.8);
+        box-shadow: 0 0 15px rgba(255, 223, 186, 0.8) !important;
     }
 
     100% {
-        box-shadow: 0 0 5px rgba(255, 223, 186, 0.5);
+        box-shadow: 0 0 5px rgba(255, 223, 186, 0.5) !important;
     }
 }
 
 .btn-custom:hover {
-    background-color: #c99c33;
-    transform: scale(1.1);
-    box-shadow: 0px 4px 10px rgba(255, 223, 186, 0.5);
-    animation: none;
+    background-color: #c99c33 !important;
+    transform: scale(1.1) !important;
+    box-shadow: 0px 4px 10px rgba(255, 223, 186, 0.5) !important;
+    animation: none !important;
+}
+
+:root {
+    --bs-body-bg: #0d1b2a !important;
+    --bs-body-color: #f8f9fa !important;
 }

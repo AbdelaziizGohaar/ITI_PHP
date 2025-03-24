@@ -1,4 +1,9 @@
 <?php
+
+// Absolute first lines
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 require_once "../DB/db_operation.php";
 require_once "../includes/utils.php";
 require_once "../validation/imageValidation.php"; // Add this line
@@ -83,7 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } catch (Exception $e) {
         $error = $e->getMessage();
     }
-}
+} 
 ?>
 
 <!DOCTYPE html>
