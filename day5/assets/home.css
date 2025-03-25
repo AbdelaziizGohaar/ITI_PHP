@@ -1,0 +1,61 @@
+/* Dark Ramadan Theme for Home Page */
+body {
+    background-color: #121212;
+    color: #f4e1c4;
+    overflow: auto;
+    animation: fadeInBody 1s ease-in-out;
+    background-image: url('ramadan-dark.jpg');
+    /* Add a dark Ramadan-themed background */
+    background-size: cover;
+    font-family: 'Amiri', serif;
+}
+
+@keyframes fadeInBody {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.navbar {
+    background-color: #2a2a2a !important;
+    /* Dark lantern-inspired color */
+    box-shadow: 0 4px 10px rgba(255, 223, 186, 0.3);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffd700 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #f4e1c4 !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700 !important;
+}
+
+.container {
+    background: rgba(30, 30, 30, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 223, 186, 0.3);
+}
+
+h1 {
+    color: #ffd700;
+    text-shadow: 2px 2px 10px rgba(255, 223, 186, 0.5);
+}
+
+.btn-danger {
+    background-color: #b22222;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #8b0000;
+}
